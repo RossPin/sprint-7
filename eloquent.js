@@ -3,7 +3,7 @@ function min(a,b){
   if (a <= b) return a;
   return b;
  }
- 
+
  console.log(min(0, 10));
  // → 0
  console.log(min(0, -10));
@@ -13,7 +13,9 @@ function min(a,b){
 
 //Exercise: Recursion
 function isEven(n) {
+  //Make n positive
   if (n < 0) n *= -1;
+  //Check if n is even
   if (n === 0) return true;
   else if (n === 1) return false;
   else return isEven(n-2);
